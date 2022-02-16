@@ -3,18 +3,22 @@
 /* Banner */
 
 .banner {
-    width: 85%;
+    position: relative;
+    width: 80%;
     height: 231px;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: auto;
     border-radius: 25px;
 }
 
-.slogan {
-    width: auto;
+.background {
+    position: absolute;
+    width: 100%;
     height: 100%;
-    margin-top: -224px;
+}
+
+.slogan {
+    position: absolute;
+    height: 100%;
     font: 48px 'Montserrat';
     font-weight: 500;
     color: #ffffff;
