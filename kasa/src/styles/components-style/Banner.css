@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+/* Banner */
+
+.banner {
+    width: 85%;
+    height: 231px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.slogan {
+    width: auto;
+    height: 100%;
+    margin-top: -224px;
+    font: 48px 'Montserrat';
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

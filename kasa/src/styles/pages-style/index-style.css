@@ -15,27 +15,3 @@ body {
     min-height: 1104px;
     background: #fafafa;
 }
-
-
-/* Banner */
-
-#banner {
-    width: 85%;
-    height: 231px;
-    /*background-image: url('./assets/backgroungAccueil.png');*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    border-radius: 25px;
-}
-
-.slogan {
-    width: auto;
-    height: 100%;
-    font: 48px 'Montserrat';
-    font-weight: 500;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
