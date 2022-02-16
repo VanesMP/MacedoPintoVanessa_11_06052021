@@ -1,0 +1,41 @@
+/* typographie de la page */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat, sans-serif';
+    width: 100%;
+    min-height: 1104px;
+    background: #fafafa;
+}
+
+
+/* Banner */
+
+#banner {
+    width: 85%;
+    height: 231px;
+    /*background-image: url('./assets/backgroungAccueil.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.slogan {
+    width: auto;
+    height: 100%;
+    font: 48px 'Montserrat';
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
