@@ -22,10 +22,13 @@
     width: 230px;
 }
 
-.accueil,
-.propos {
+a {
     width: auto;
     font: 24px 'Montserrat';
     font-weight: 500;
     color: #FF6060;
+}
+
+.linkActive {
+    color: green;
 }
