@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 .containerCard {
-    width: 100px;
-    height: 100px;
+    width: 340px;
+    height: 340px;
     background-color: red;
 }
 
+.elementCard {
+    width: 340px;
+    height: 340px;
+    margin-bottom: 50px;
+}
+
+.cover {
+    width: 340px;
+    height: 340px;
+}
+
 .titre {
-    color: #000000;
+    font: 20px 'Montserrat';
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: -45px;
+    margin-left: 15px;
+    width: auto;
+    height: auto;
 }
