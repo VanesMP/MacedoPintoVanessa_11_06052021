@@ -1,14 +1,12 @@
 import "../styles/components-style/Cards.css"
-import { NavLink} from "react-router-dom"
-import cover from '../assets/backgroundLogement.png'
+/*import { NavLink} from "react-router-dom" = <NavLink className="lien" exact to='/fiche-logement/:id'></NavLink>*/
+/*import cover from '../assets/backgroundLogement.png'*/
 
-function Cards() {
+function Cards({id, cover, title}) {
     return (
-            <li className="elementCard">
-            <NavLink className="lien" exact to='/fiche-logement/:id'>
+            <li className="elementCard" key={id}>
             <img src={cover} alt='' className="cover"/>
-            <p className="titre">Titre de la location</p>
-            </NavLink>
+            <p className="titre">Titre de la location, {title}</p>
             </li>
     )
 };

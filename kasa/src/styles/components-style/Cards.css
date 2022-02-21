@@ -1,19 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-.containerCard {
-    width: 340px;
-    height: 340px;
-    background-color: red;
-}
-
 .elementCard {
     width: 340px;
     height: 340px;
     margin-bottom: 50px;
+    background-color: grey;
+    border-radius: 10px;
 }
 
 .cover {
     width: 340px;
     height: 340px;
+    border-radius: 10px;
 }
 
 .titre {
