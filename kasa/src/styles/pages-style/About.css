@@ -1,0 +1,9 @@
+.conatinerAboutSection {
+    width: 65%;
+    margin: auto;
+    min-height: 705px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

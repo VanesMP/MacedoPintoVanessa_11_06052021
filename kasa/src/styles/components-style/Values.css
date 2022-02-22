@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.containerValue {
+    width: 100%;
+}
+
+.dropdown {
+    background-color: #ff6060;
+    width: 100%;
+    height: 47px;
+    border-radius: 5px;
+}
+
+.valueTitle {
+    color: white;
+    font: 24px 'Montserrat';
+    font-weight: 500;
+    margin-left: 20px;
+    padding-top: 9px;
+}
+
+.descriptionValue {
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.valueText {
+    color: #ff6060;
+    font: 24px'Montserrat';
+    font-weight: 400;
+}

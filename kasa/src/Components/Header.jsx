@@ -9,7 +9,7 @@ function Header(){
                <nav className='App-nav'>
                    <ul className='App-nav'>
                     <li><Link to='/' className="accueil">Accueil</Link></li>                       
-                    <li><Link to='/a-propos' className="propos" >A propos</Link></li>
+                    <li><Link to='/about' className="propos" >A propos</Link></li>
                    </ul>
                </nav>
             </header>

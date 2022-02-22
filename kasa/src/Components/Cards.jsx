@@ -6,12 +6,11 @@ import data from "../data.json"
 /*import { NavLink} from "react-router-dom" = <NavLink className="lien" exact to='/fiche-logement/:id'></NavLink>*/
 /*import cover from '../assets/backgroundLogement.png'*/
 
-console.log(data)
  function Cards () {
     return (
         <ul className="listCards">
             {data.logements.map((logement) => ( 
-            <Link to={`/AccomodationSheet/${logement.id}`}>
+            <Link className="elementCard" to={`/AccomodationSheet/${logement.id}`}>
             <li className="elementCard" key={logement.id}>
             <img src={logement.cover} alt='' className="cover"/>
             <p className="titre">{logement.title}</p>
