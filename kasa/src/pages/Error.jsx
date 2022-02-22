@@ -3,7 +3,7 @@ import { NavLink} from "react-router-dom"
 import '../styles/pages-style/error-style.css';
 import Header from "../Components/Header";
 
-function Error() {
+export default function Error() {
     return (
         <div>
              <Header />
@@ -16,5 +16,3 @@ function Error() {
             </div>
                 </div>
     ) };
-
-    export default Error;

@@ -19,14 +19,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 230px;
+    width: 305px;
 }
 
-a {
+.accueil,
+.propos {
     width: auto;
     font: 24px 'Montserrat';
     font-weight: 500;
     color: #FF6060;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accueil:hover,
+.propos:hover {
+    text-decoration: underline #FF6060;
 }
 
 .linkActive {

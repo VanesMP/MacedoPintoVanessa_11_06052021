@@ -11,6 +11,7 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .titre {
@@ -19,6 +20,20 @@
     color: #ffffff;
     margin-top: -45px;
     margin-left: 15px;
-    width: auto;
+    width: 92%;
     height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.listCards {
+    width: 95%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
