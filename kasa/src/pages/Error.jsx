@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink} from "react-router-dom"
+import { Link} from "react-router-dom"
 import '../styles/pages-style/error-style.css';
 import Header from "../Components/Header";
 
@@ -12,7 +12,7 @@ export default function Error() {
                 <h1 className="error">404</h1>
                 <h2 className="oops">Oups! La page que vous demandez n' existe pas.</h2>
             </div>
-            <p className="return"><NavLink to='/'>Retourner sur la page d'accueil</NavLink></p>
+            <p className="return"><Link to='/'>Retourner sur la page d'accueil</Link></p>
             </div>
                 </div>
     ) };
