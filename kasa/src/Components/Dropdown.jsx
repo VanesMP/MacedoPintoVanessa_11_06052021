@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components-style/Values.css"
+import "../styles/components-style/Dropdown.css"
 import arrow from "../assets/arrowDropdown.png"
 
 function Dropdown ({title, text}) {

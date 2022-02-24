@@ -2,6 +2,7 @@ import React,  { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import '../styles/pages-style/index-style.css';
 import Header from "../Components/Header";
+import SlideShow from "../Components/SlideShow";
 import Error from "./Error";
 import data from "../data.json"
 
@@ -28,6 +29,7 @@ function AccomodationSheet() {
     return ( 
         <div>
         <Header />
+        <SlideShow views={sheet.pictures}/>
         <div>
             <h1 className="nameAccomodation" key={sheet.id}>{sheet.title}</h1>
         </div>
