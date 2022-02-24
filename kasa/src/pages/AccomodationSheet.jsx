@@ -3,8 +3,13 @@ import { useParams } from "react-router-dom";
 import '../styles/pages-style/index-style.css';
 import Header from "../Components/Header";
 import SlideShow from "../Components/SlideShow";
+import Host from "../Components/Host";
+import Tags from "../Components/Tags";
+
 import Error from "./Error";
-import data from "../data.json"
+import data from "../data.json";
+
+import "../styles/pages-style/AccomodationSheet.css";
 
 /*Recuperer l'id du logement de lurl*/
 
@@ -30,8 +35,16 @@ function AccomodationSheet() {
         <div>
         <Header />
         <SlideShow views={sheet.pictures}/>
-        <div>
+        <div className="partOne">
+        <div className="enTete">
             <h1 className="nameAccomodation" key={sheet.id}>{sheet.title}</h1>
+            <h2 className="locationAccomodation">{sheet.location}</h2>
+        </div>
+        <Host realtor={sheet.host}/>
+        </div>
+        <div className="partTwo">
+            <Tags/>
+            
         </div>
         </div>
     )

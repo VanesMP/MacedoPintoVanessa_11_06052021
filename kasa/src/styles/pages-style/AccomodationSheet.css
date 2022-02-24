@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.partOne {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto;
+    align-items: flex-end;
+}
+
+.enTete {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.nameAccomodation {
+    font: 33px 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    color: #ff6060;
+}
+
+.locationAccomodation {
+    font: 18px 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    line-height: 25px;
+    color: #ff6060;
+}
