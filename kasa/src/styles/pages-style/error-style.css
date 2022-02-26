@@ -27,6 +27,7 @@
     font: 32px 'Montserrat';
     font-weight: 500;
     color: #ff6060;
+    line-height: 25px;
 }
 
 .return {
@@ -35,4 +36,24 @@
     font-weight: 500;
     color: #ff6060;
     text-decoration: underline #ff6060;
+}
+
+
+/************** RESPONSIVE ******************/
+
+@media all and (max-width: 400px) {
+    .containerError {
+        margin-top: 150px;
+        height: 389px;
+    }
+    .error {
+        font-size: 96px;
+    }
+    .oops {
+        width: 87%;
+        font-size: 18px;
+    }
+    .return {
+        font-size: 14px;
+    }
 }

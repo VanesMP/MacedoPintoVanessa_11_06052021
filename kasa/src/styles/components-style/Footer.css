@@ -28,3 +28,13 @@
     font: 21px 'Montserrat';
     font-weight: 500;
 }
+
+
+/************* RESPONSIVE ******************/
+
+@media all and (max-width: 400px) {
+    .AllRight {
+        width: auto;
+        font: 16px 'Montserrat';
+    }
+}

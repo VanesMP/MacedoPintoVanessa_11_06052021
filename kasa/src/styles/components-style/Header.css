@@ -36,3 +36,34 @@
 .propos:hover {
     text-decoration: underline #FF6060;
 }
+
+
+/********************* RESPONSIVE **************/
+
+@media all and (max-width: 400px) {
+    .App-header {
+        width: 335px;
+        margin-bottom: 0;
+    }
+    ul {
+        width: 82%;
+    }
+    li {
+        width: auto;
+    }
+    .accueil {
+        margin-right: 16px;
+    }
+    .App-nav {
+        width: 68%;
+        justify-content: flex-end;
+    }
+    .Logo {
+        width: 38%;
+        height: 47px;
+    }
+    .accueil,
+    .propos {
+        font: 15px 'Montserrat';
+    }
+}

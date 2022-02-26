@@ -14,6 +14,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    border-radius: 25px;
 }
 
 .slogan {
@@ -25,4 +26,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/************** RESPONSIVE ***************/
+
+@media all and (min-width: 401px) and (max-width: 1020px) {
+    .slogan {
+        font: 41px 'Montserrat';
+    }
+}
+
+@media all and (max-width: 400px) {
+    .banner {
+        width: 90%;
+        height: 120px;
+    }
+    .slogan {
+        width: 63%;
+        font: 24px 'Montserrat';
+        margin-left: 15px;
+    }
 }
