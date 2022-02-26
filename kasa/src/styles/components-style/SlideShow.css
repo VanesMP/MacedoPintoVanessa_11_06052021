@@ -51,3 +51,13 @@ img.active {
 .notUse {
     display: none;
 }
+
+.numberOfPages {
+    width: 24px;
+    height: 33px;
+    color: #ffffff;
+    font: 18px 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
