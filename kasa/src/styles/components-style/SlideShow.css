@@ -47,3 +47,7 @@ img.sliderItem {
 img.active {
     opacity: 1;
 }
+
+.notUse {
+    display: none;
+}

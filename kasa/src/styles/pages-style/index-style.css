@@ -12,3 +12,7 @@ body {
     width: 100%;
     background: #ffffff;
 }
+
+a:visited {
+    color: #ff6060;
+}

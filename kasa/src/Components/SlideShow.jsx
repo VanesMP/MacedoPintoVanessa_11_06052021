@@ -19,6 +19,19 @@ function SlideShow ({views}) {
         setPage(page > 0 ? page - 1 : views.length - 1)
     }
 
+    if(views.length <= 1){
+        console.log("1 image uniquement")
+       /* const buttons = document.getElementsByClassName('buttonArrow')
+        console.log(buttons)
+        for(let i=0; i<buttons.length; i++){
+            buttons[i].classList.add("notUse")
+        }*/
+
+        const next = document.getElementsByClassName("nextButton")
+        console.log('grrr : ', next)
+        /*next.classList.add('notUse')*/
+    }
+
     return (
         <section>
             <div className="containerSlide">
@@ -26,11 +39,9 @@ function SlideShow ({views}) {
                 <img key={index} src={picture} alt="galerie de la location" className= {"sliderItem"+ (page === index ? ' active' : "")} />
                 ))}
             <div className="buttonSlide">
-            <img className="prevButton" src={arrowslide} alt="arrow prev"  onClick={prevSlide}/>
-            <img className="nextButton" src={arrowslide} alt="arrow next" onClick={nextSlide}/>
-            </div>
-            
-            
+            <img className="prevButton " src={arrowslide} alt="arrow prev"  onClick={prevSlide}/>
+            <img className="nextButton " src={arrowslide} alt="arrow next" onClick={nextSlide}/>
+            </div>        
         </div>
         </section>
     )

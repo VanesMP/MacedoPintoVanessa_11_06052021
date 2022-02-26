@@ -1,11 +1,15 @@
 import React from "react";
 import "../styles/components-style/Tags.css"
 
-function Tags() {
+function Tags({tag}) {
     return (
-        <div className="tagList">
-            <div className="myTag"></div>
-        </div>
+        <ul className="tagList">
+            {tag.map((nameTag, index) => (
+                <li className="containerTag" key={index}>
+                    <p className="textTag">{nameTag}</p>
+                </li>
+            ))}
+        </ul>
 
     )
 }

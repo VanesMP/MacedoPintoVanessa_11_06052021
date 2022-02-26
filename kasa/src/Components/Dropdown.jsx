@@ -9,9 +9,13 @@ return (
         <h2 className="valueTitle">{title}</h2>
         <div className="arrowIcon" onClick={handleClick}><img src={arrow} alt="fleche de dropdown" /></div>
         </div>
-        <div className="descriptionValue">
-        <p className="valueText">{text}</p>
-        </div>
+        <ul className="descriptionValue">
+        {text.map((element, index) => (
+                <li className="valueText" key={title + index}>{element}</li>        
+            ))}
+        </ul>
+
+
     </div>
 )
 }

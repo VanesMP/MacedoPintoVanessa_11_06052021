@@ -1,0 +1,13 @@
+.containerStars {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+}

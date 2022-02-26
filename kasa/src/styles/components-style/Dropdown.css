@@ -22,7 +22,7 @@
 }
 
 .arrowIcon {
-    width: 24px;
+    width: auto;
     cursor: pointer;
     transform: rotate(180deg)
 }
@@ -32,12 +32,13 @@
 }
 
 .descriptionValue {
-    width: 100%;
+    width: 95%;
     height: auto;
     background-color: #f7f7f7;
     border-radius: 5px;
     margin-bottom: 30px;
     display: none;
+    padding: 30px 0px 20px 5%;
 }
 
 .valueText {
@@ -45,10 +46,7 @@
     font: 24px'Montserrat';
     font-weight: 400;
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 142.6%;
-    padding: 15px;
+    line-height: 28px;
 }
 
 .notHidden {

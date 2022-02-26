@@ -29,3 +29,35 @@
     line-height: 25px;
     color: #ff6060;
 }
+
+.partTwo {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.partThree {
+    width: 85%;
+    margin: 25px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    width: 47%;
+}
+
+.equipements {
+    width: 47%;
+}
+
+.equipement {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipement p {
+    color: black;
+}

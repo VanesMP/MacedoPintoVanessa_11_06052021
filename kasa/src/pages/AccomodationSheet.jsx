@@ -5,7 +5,9 @@ import Header from "../Components/Header";
 import SlideShow from "../Components/SlideShow";
 import Host from "../Components/Host";
 import Tags from "../Components/Tags";
-
+import RatingStar from "../Components/RatingStar";
+import Dropdown from "../Components/Dropdown";
+import Footer from "../Components/Footer";
 import Error from "./Error";
 import data from "../data.json";
 
@@ -43,9 +45,18 @@ function AccomodationSheet() {
         <Host realtor={sheet.host}/>
         </div>
         <div className="partTwo">
-            <Tags/>
-            
+            <Tags tag={sheet.tags}/>
+            <RatingStar star={sheet.rating}/>
         </div>
+        <div className="partThree">
+            <div className="description" >
+            <Dropdown title="Decription" text={[sheet.description]}/>
+            </div>
+            <div className="equipements"> 
+            <Dropdown className="equipement" title="Équipements" text={sheet.equipments} />
+            </div> 
+        </div>
+        <Footer />
         </div>
     )
 }
