@@ -26,3 +26,23 @@
     overflow: hidden;
     white-space: nowrap;
 }
+
+
+/********** MOBILE **********/
+
+@media all and (max-width: 400px) {
+    .tagList {
+        position: relative;
+        top: -75px;
+        margin: 0;
+    }
+    .containerTag {
+        width: 84px;
+        height: 18px;
+    }
+    .textTag {
+        width: 90%;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

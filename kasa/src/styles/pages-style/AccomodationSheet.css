@@ -67,9 +67,30 @@
 
 @media all and (max-width: 400px) {
     .partOne,
-    .partTwo,
-    .partThree {
+    .partTwo {
         width: 335px;
     }
-    .nameAccomodation {}
+    .partOne,
+    .partTwo {
+        display: block;
+    }
+    .partThree {
+        margin: 0px auto 50px;
+        flex-direction: column;
+    }
+    .enTete {
+        height: auto;
+    }
+    .nameAccomodation {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .locationAccomodation {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .description,
+    .equipements {
+        width: 100%;
+    }
 }

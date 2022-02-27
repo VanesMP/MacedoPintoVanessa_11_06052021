@@ -28,3 +28,23 @@
     height: 64px;
     border-radius: 50%;
 }
+
+
+/********** MOBILE **********/
+
+@media all and (max-width: 400px) {
+    .containerHost {
+        justify-content: flex-end;
+        position: relative;
+        top: 21px;
+    }
+    .firstName,
+    .lastName {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .portrait {
+        width: 38px;
+        height: 38px;
+    }
+}

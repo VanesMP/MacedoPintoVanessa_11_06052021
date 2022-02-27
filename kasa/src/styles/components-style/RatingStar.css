@@ -11,3 +11,18 @@
     height: 30px;
     margin-left: 7px;
 }
+
+
+/********** MOBILE **********/
+
+@media all and (max-width: 400px) {
+    .containerStars {
+        width: 114px;
+        position: relative;
+        top: -48px;
+    }
+    .star {
+        width: 17px;
+        height: 17px;
+    }
+}
