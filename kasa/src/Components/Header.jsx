@@ -9,10 +9,10 @@ function Header(){
       };
 
     return (
-        <header className='App-header'>
-               <img src={logo} alt="kasa-entreprise-location-appartement" className='Logo'/>
-               <nav className='App-nav'>
-                   <ul className='App-nav'>
+        <header className='containerHeader'>
+               <img src={logo} alt="kasa-entreprise-location-appartement" className='logo'/>
+               <nav className='nav'>
+                   <ul className='nav'>
                     <li><NavLink to='/' 
                     style={({ isActive }) =>
                     isActive ? activeStyle : undefined

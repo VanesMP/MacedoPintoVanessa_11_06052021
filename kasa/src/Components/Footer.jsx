@@ -3,10 +3,10 @@ import '../styles/components-style/Footer.css'
 
 function Footer(){
     return (
-        <footer className='App-footer'>
+        <footer className='containerfooter'>
                <div className='container'>
-               <img src={Logo} alt="kasa-entreprise-location-appartement" className='LogoFooter'/>
-               <p className='AllRight'>© 2020 Kasa. All rights reserved</p>
+               <img src={Logo} alt="kasa-entreprise-location-appartement" className='logoFooter'/>
+               <p className='allRight'>© 2020 Kasa. All rights reserved</p>
                </div>
             </footer>
     )

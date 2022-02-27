@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-.App-header {
+.containerHeader {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -10,12 +10,12 @@
     margin-bottom: 80px;
 }
 
-.Logo {
+.logo {
     width: 250px;
     height: 80px;
 }
 
-.App-nav {
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 /********************* RESPONSIVE **************/
 
 @media all and (max-width: 400px) {
-    .App-header {
+    .containerHeader {
         width: 335px;
         margin-bottom: 0;
     }
@@ -54,11 +54,11 @@
     .accueil {
         margin-right: 16px;
     }
-    .App-nav {
+    .nav {
         width: 68%;
         justify-content: flex-end;
     }
-    .Logo {
+    .logo {
         width: 38%;
         height: 47px;
     }
