@@ -66,6 +66,69 @@ img.active {
 }
 
 
+/******** RESPONSIVE *******************/
+
+@media all and (min-width: 1180px) and (max-width: 1300px) {
+    img.sliderItem,
+    .containerSlide {
+        width: 1063px;
+    }
+    .buttonSlide {
+        width: 1023px;
+    }
+    .prevButton,
+    .nextButton {
+        width: 35px;
+        height: 65px;
+    }
+}
+
+@media all and (min-width: 1050px) and (max-width: 1179px) {
+    img.sliderItem,
+    .containerSlide {
+        width: 967px;
+    }
+    .buttonSlide {
+        width: 927px;
+    }
+    .prevButton,
+    .nextButton {
+        width: 35px;
+        height: 65px;
+    }
+}
+
+@media all and (min-width: 770px) and (max-width: 1049px) {
+    img.sliderItem,
+    .containerSlide {
+        width: 725px;
+    }
+    .buttonSlide {
+        width: 685px;
+    }
+    .prevButton,
+    .nextButton {
+        width: 35px;
+        height: 65px;
+    }
+}
+
+@media all and (min-width: 401px) and (max-width: 769px) {
+    img.sliderItem,
+    .containerSlide {
+        width: 535px;
+    }
+    .buttonSlide {
+        width: 496px;
+    }
+    .prevButton,
+    .nextButton {
+        width: 25px;
+        height: 42px;
+    }
+}
+
+
 /*********** MOBILE **************/
 
 @media all and (max-width: 400px) {

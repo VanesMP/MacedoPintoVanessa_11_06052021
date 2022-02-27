@@ -15,7 +15,7 @@
 }
 
 .textTag {
-    width: fit-content;
+    width: min-content;
     margin: auto;
     font: 14px 'Montserrat';
     font-weight: 500;
@@ -25,6 +25,17 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+}
+
+
+/********** RESPONSIVE  ****************/
+
+@media all and (min-width: 401px) and (max-width: 850px) {
+    .tagList {
+        position: relative;
+        top: -89px;
+        margin: 0;
+    }
 }
 
 

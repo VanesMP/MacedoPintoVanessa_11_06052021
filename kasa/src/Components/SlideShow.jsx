@@ -21,7 +21,7 @@ function SlideShow ({views}) {
 
 
             return (
-                <section>
+                <section className="sectionSheet">
                     <div className="containerSlide">
                 {views.map((picture, index) => (
                         <img key={index} src={picture} alt="galerie de la location" className= {"sliderItem"+ (page === index ? ' active' : "")} />

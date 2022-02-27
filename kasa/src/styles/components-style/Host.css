@@ -30,6 +30,17 @@
 }
 
 
+/********** RESPONSIVE  ****************/
+
+@media all and (min-width: 401px) and (max-width: 850px) {
+    .containerHost {
+        justify-content: flex-end;
+        position: relative;
+        top: 49px;
+    }
+}
+
+
 /********** MOBILE **********/
 
 @media all and (max-width: 400px) {

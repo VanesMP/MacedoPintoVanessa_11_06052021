@@ -41,6 +41,46 @@
 
 /************** RESPONSIVE ******************/
 
+@media all and (min-width: 980px) and (max-width: 1210px) {
+    .containerError {
+        height: 560px;
+        justify-content: space-around;
+    }
+    .error {
+        font-size: 228px;
+    }
+    .oops {
+        font-size: 26px;
+    }
+}
+
+@media all and (min-width: 792px) and (max-width: 979px) {
+    .containerError {
+        justify-content: space-around;
+    }
+    .error {
+        font-size: 185px;
+    }
+    .oops {
+        font-size: 21px;
+    }
+}
+
+@media all and (min-width: 401px) and (max-width: 791px) {
+    .containerError {
+        justify-content: space-evenly;
+    }
+    .error {
+        font-size: 145px;
+    }
+    .oops {
+        font-size: 16px;
+    }
+}
+
+
+/************** MOBILE ******************/
+
 @media all and (max-width: 400px) {
     .containerError {
         margin-top: 150px;

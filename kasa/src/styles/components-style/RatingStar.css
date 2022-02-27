@@ -13,6 +13,18 @@
 }
 
 
+/********** RESPONSIVE  ****************/
+
+@media all and (min-width: 401px) and (max-width: 850px) {
+    .containerStars {
+        width: 114px;
+        position: relative;
+        top: -48px;
+        justify-content: flex-start;
+    }
+}
+
+
 /********** MOBILE **********/
 
 @media all and (max-width: 400px) {
