@@ -22,6 +22,7 @@
 @media all and (max-width: 400px) {
     .containerSection {
         width: 90%;
+        margin-top: 30px;
         background-color: #ffffff;
     }
 }

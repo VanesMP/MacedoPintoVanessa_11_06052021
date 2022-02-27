@@ -18,17 +18,15 @@
     z-index: 1;
 }
 
-.prevButton {
+.prevButton,
+.nextButton {
     width: 49px;
     height: 80px;
     cursor: pointer;
 }
 
 .nextButton {
-    width: 49px;
-    height: 80px;
     transform: rotate(180deg);
-    cursor: pointer;
 }
 
 img.sliderItem {
@@ -65,4 +63,28 @@ img.active {
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
+}
+
+
+/*********** MOBILE **************/
+
+@media all and (max-width: 400px) {
+    .containerSlide,
+    .buttonSlide,
+    .numberOfPages {
+        width: 335px;
+        height: 255px;
+    }
+    img.sliderItem {
+        width: 335px;
+        height: 255px;
+    }
+    .buttonSlide {
+        margin: 0;
+    }
+    .prevButton,
+    .nextButton {
+        width: 16px;
+        height: 25px;
+    }
 }

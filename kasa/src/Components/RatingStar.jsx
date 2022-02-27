@@ -9,8 +9,14 @@ function RatingStar ( {star} ) {
     const numberStar = parseInt(star)
     console.log(numberStar)
     
-    let starArray = [...new Array(numberStar)].map(() => ({starRed}));
-    console.log('starArray :',starArray);
+    let index = 0;
+    let starRedArray = [...new Array(numberStar)].map(() => ({index : 'star' + ++index, img : starRed}));
+    console.log('starArray :',starRedArray);
+
+    const numberStarGrey = 5-numberStar;
+    console.log(numberStarGrey) 
+
+    let starGreyArray = [...new Array(numberStarGrey)].map(() => ({ index : 'star' + ++index , img: starGrey}));
 
 /*
 starArray.map((number) =>
@@ -19,8 +25,11 @@ starArray.map((number) =>
 
     return (
         <div className="containerStars" >      
-            {starArray.map((index, number) => (
-                <img key={index} className="star" src={number = starRed } alt="etoile de notation" />
+            {starRedArray.map((element) => (
+                <img key={element.index} className="star" src={element.img  } alt="etoile de notation rouge" />
+            ))}
+             {starGreyArray.map((element) => (
+                <img key={element.index} className="star" src={element.img } alt="etoile de notation grise" />
             ))}
         </div>
     )

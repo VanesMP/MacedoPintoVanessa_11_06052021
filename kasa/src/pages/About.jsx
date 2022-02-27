@@ -12,9 +12,11 @@ export default function About() {
     return ( 
         <div className='App'>
                   <Header />
-                  <Banner>
-                  <img className="background" src={background} alt="kasa-location-appartements" />
+                  <div className="bannerAbout">
+                  <Banner className="banner">
+                  <img className="background backgroundAbout" src={background} alt="kasa-location-appartements" />
                   </Banner> 
+                  </div>
                   <div className="conatinerAboutSection">
                   <Dropdown title="Fiabilité" text={[`Les annonces postées sur Kasa garantissent une fiabilité totale. 
                   Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  

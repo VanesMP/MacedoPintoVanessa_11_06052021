@@ -11,7 +11,7 @@ function Home() {
     return ( 
         <div className='App'>
                   <Header />
-                  <Banner>
+                  <Banner className="bannerHome">
                   <img className="background" src={background} alt="kasa-location-appartements" />
         <h1 className="slogan">Chez vous, partout et ailleurs</h1> 
                   </Banner> 

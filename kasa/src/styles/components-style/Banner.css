@@ -42,6 +42,10 @@
         width: 90%;
         height: 120px;
     }
+    .background {
+        object-fit: cover;
+        object-position: right;
+    }
     .slogan {
         width: 63%;
         font: 24px 'Montserrat';

@@ -33,8 +33,17 @@
 /************* RESPONSIVE ******************/
 
 @media all and (max-width: 400px) {
+    .App-footer {
+        height: 155px;
+    }
     .AllRight {
         width: auto;
+        height: 143px;
         font: 16px 'Montserrat';
+    }
+    .container {
+        height: 128px;
+        justify-content: center;
+        padding-top: 25px;
     }
 }
