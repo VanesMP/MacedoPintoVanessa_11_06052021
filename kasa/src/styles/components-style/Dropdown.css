@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 .containerValue {
     width: 100%;
+    margin-bottom: 33px;
 }
 
 .dropdown {
@@ -36,7 +37,6 @@
     height: auto;
     background-color: #f7f7f7;
     border-radius: 5px;
-    margin-bottom: 30px;
     display: none;
     padding: 30px 0px 20px 5%;
 }

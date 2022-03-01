@@ -18,7 +18,7 @@ import "../styles/pages-style/AccomodationSheet.css";
 function AccomodationSheet() {
     
     const { id } = useParams()
-    const [sheet, setSheet] = useState(null)
+    const [sheet, setSheet] = useState()
     
     useEffect(() => {
       const myAccomodation = data.logements.filter((logement)=>logement.id  === id)[0]
