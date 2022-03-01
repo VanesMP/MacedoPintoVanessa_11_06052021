@@ -18,10 +18,6 @@ function RatingStar ( {star} ) {
 
     let starGreyArray = [...new Array(numberStarGrey)].map(() => ({ index : 'star' + ++index , img: starGrey}));
 
-/*
-starArray.map((number) =>
-  console.log('number :',number)
-);*/
 
     return (
         <div className="containerStars" >      

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../data.json";
+import PropTypes from 'prop-types';
 import arrowslide from "../assets/arrowSlide.png"
 
 import "../styles/components-style/SlideShow.css"
@@ -35,6 +36,10 @@ function SlideShow ({views}) {
                 </div>
                 </section>
             )
+}
+
+SlideShow.propTypes = {
+    picture: PropTypes.string,
 }
 
 export default SlideShow;
