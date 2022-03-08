@@ -19,7 +19,7 @@ return (
 )
 }
 
-function handleClick(e, title){
+function handleClick(e){
  const arrow = e.target;
  arrow.classList.toggle('activeArrowIcon');
 const textAppear = document.getElementsByClassName('descriptionValue')
