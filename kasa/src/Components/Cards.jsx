@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "../styles/components-style/Cards.css";
 import PropTypes from 'prop-types';
 import data from "../data.json"
-/*import { NavLink} from "react-router-dom" = <NavLink className="lien" exact to='/fiche-logement/:id'></NavLink>*/
-/*import cover from '../assets/backgroundLogement.png'*/
 
  function Cards () {
     return (

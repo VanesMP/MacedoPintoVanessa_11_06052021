@@ -7,17 +7,13 @@ import "../styles/components-style/RatingStar.css";
 function RatingStar ( {star} ) {
  
     const numberStar = parseInt(star)
-    console.log(numberStar)
     
     let index = 0;
     let starRedArray = [...new Array(numberStar)].map(() => ({index : 'star' + ++index, img : starRed}));
-    console.log('starArray :',starRedArray);
 
     const numberStarGrey = 5-numberStar;
-    console.log(numberStarGrey) 
 
     let starGreyArray = [...new Array(numberStarGrey)].map(() => ({ index : 'star' + ++index , img: starGrey}));
-
 
     return (
         <div className="containerStars" >      

@@ -1,6 +1,9 @@
-import React,  { useState, useEffect } from "react";
+
 import { useParams } from "react-router-dom";
+
 import '../styles/pages-style/index-style.css';
+import "../styles/pages-style/AccomodationSheet.css";
+
 import Header from "../Components/Header";
 import SlideShow from "../Components/SlideShow";
 import Host from "../Components/Host";
@@ -9,56 +12,76 @@ import RatingStar from "../Components/RatingStar";
 import Dropdown from "../Components/Dropdown";
 import Footer from "../Components/Footer";
 import Error from "./Error";
+
 import data from "../data.json";
 
-import "../styles/pages-style/AccomodationSheet.css";
 
 /*Recuperer l'id du logement de lurl*/
 
 function AccomodationSheet() {
     
-    const { id } = useParams()
-    const [sheet, setSheet] = useState()
-    
-    useEffect(() => {
-      const myAccomodation = data.logements.filter((logement)=>logement.id  === id)[0]
-      setSheet(myAccomodation)
-    }, [id]);
-    
-    if (!sheet) {
-      return (
+    //cette variable contient l'id du logement qui se trouve dans l'url
+    const { id } = useParams() 
+    //variable qui contient le logement dans le fichier json dont son id correspond a l'id de l url
+    const myRoom = data.logements.filter((logement) => logement.id === id)[0]
+    //condition pour afficher la page d'erreur si l'id de l'url ne correspond a un des id des logement du json
+    //et sinon afficher la fiche logement
+    if (myRoom === undefined){
+        return(
         <div>
-           <Error/> 
+            <Error />
         </div>
-      )
-    }
-
+    )} else {
     return ( 
         <div>
         <Header />
-        <SlideShow views={sheet.pictures}/>
+        <SlideShow views={myRoom.pictures}/>
         <div className="partOne">
         <div className="enTete">
-            <h1 className="nameAccomodation" key={sheet.id}>{sheet.title}</h1>
-            <h2 className="locationAccomodation">{sheet.location}</h2>
+            <h1 className="nameAccomodation" key={myRoom.id}>{myRoom.title}</h1>
+            <h2 className="locationAccomodation">{myRoom.location}</h2>
         </div>
-        <Host realtor={sheet.host}/>
+        <Host realtor={myRoom.host}/>
         </div>
         <div className="partTwo">
-            <Tags tag={sheet.tags}/>
-            <RatingStar star={sheet.rating}/>
+            <Tags tag={myRoom.tags}/>
+            <RatingStar star={myRoom.rating}/>
         </div>
         <div className="partThree">
             <div className="description" >
-            <Dropdown title="Decription" text={[sheet.description]}/>
+            <Dropdown title="Decription" text={[myRoom.description]}/>
             </div>
             <div className="equipements"> 
-            <Dropdown className="equipement" title="Équipements" text={sheet.equipments} />
+            <Dropdown className="equipement" title="Équipements" text={myRoom.equipments} />
             </div> 
         </div>
+        
         <Footer />
         </div>
-    )
+    )}
 }
 
 export default AccomodationSheet;
+
+/*
+<SlideShow views={myRoom.pictures}/>
+        <div className="partOne">
+        <div className="enTete">
+            <h1 className="nameAccomodation" key={myRoom.id}>{myRoom.title}</h1>
+            <h2 className="locationAccomodation">{myRoom.location}</h2>
+        </div>
+        <Host realtor={myRoom.host}/>
+        </div>
+        <div className="partTwo">
+            <Tags tag={myRoom.tags}/>
+            <RatingStar star={myRoom.rating}/>
+        </div>
+        <div className="partThree">
+            <div className="description" >
+            <Dropdown title="Decription" text={[myRoom.description]}/>
+            </div>
+            <div className="equipements"> 
+            <Dropdown className="equipement" title="Équipements" text={myRoom.equipments} />
+            </div> 
+        </div>
+*/
