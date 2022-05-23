@@ -22,7 +22,6 @@ function AccomodationSheet() {
 
     //variable qui contient le logement dans le fichier json dont son id correspond a l'id de l url
     const myRoom = data.logements.filter((logement) => logement.id === id)[0]
-    console.log(myRoom)
     //condition: afficher la page d'erreur si l'id de l'url ne correspond a un des id des logements du mock
     //sinon afficher la fiche logement
     if (myRoom === undefined){

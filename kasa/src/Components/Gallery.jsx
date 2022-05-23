@@ -45,9 +45,4 @@ Gallery.propTypes = {
 
 export default Gallery;
 
-/*Condition à la volée avec l’opérateur logique &&
-Ça fonctionne parce qu’en JavaScript, true && expression est toujours évalué 
-à expression, et false && expression est toujours évalué à false.
-Du coup, si la condition vaut true, l’élément juste après && sera affiché. 
-Si elle vaut false, React va l’ignorer et le sauter.*/
 
