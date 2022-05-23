@@ -28,5 +28,3 @@ function RatingStar ( {star} ) {
 }
 
 export default RatingStar;
-
-/*src={numberStar ? starRed : greyStar}*/
