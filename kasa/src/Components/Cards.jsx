@@ -8,12 +8,12 @@ import data from "../data.json"
     return (
         <ul className="listCards">
             {data.logements.map((logement) => ( 
-            <Link className="elementCard" key={logement.id} to={`/AccomodationSheet/${logement.id}`}>
-            <li className="elementCard" >
+            <li className="elementCard"  key={logement.id}>
+            <Link className="elementCard" to={`/AccomodationSheet/${logement.id}`}>
             <img src={logement.cover} alt='' className="cover"/>
             <p className="titre">{logement.title}</p>
-            </li>
             </Link>
+            </li>
             ))}
        </ul>
     )

@@ -3,16 +3,21 @@ import "../data.json";
 import PropTypes from 'prop-types';
 import arrowslide from "../assets/arrowSlide.png"
 
-import "../styles/components-style/SlideShow.css"
+import "../styles/components-style/Gallery.css"
 
-function SlideShow ({views}) {
+function Gallery ({views}) {
 
+    //etat initail du state
     const [page, setPage] = useState(0)
 
+    //methode: image suivant
+    //si l'image affichée est la dernière de la galerie, qaund l'utilisateur clique sur "image suivante", la galerie affiche la première image. 
     const nextSlide = () => {
         setPage(page < views.length - 1 ? page + 1 : 0);
     }
     
+    //methode: image precedente
+    //Si l'utilisateur se trouve à la première image et qu'il clique sur "image précédente", la galerie affiche la dernière image.
     const prevSlide = () => {
         setPage(page > 0 ? page - 1 : views.length - 1)
     }
@@ -34,11 +39,11 @@ function SlideShow ({views}) {
             )
 }
 
-SlideShow.propTypes = {
+Gallery.propTypes = {
     picture: PropTypes.string,
 }
 
-export default SlideShow;
+export default Gallery;
 
 /*Condition à la volée avec l’opérateur logique &&
 Ça fonctionne parce qu’en JavaScript, true && expression est toujours évalué 

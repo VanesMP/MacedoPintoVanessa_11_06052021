@@ -5,7 +5,7 @@ import '../styles/pages-style/index-style.css';
 import "../styles/pages-style/AccomodationSheet.css";
 
 import Header from "../Components/Header";
-import SlideShow from "../Components/SlideShow";
+import Gallery from "../Components/Gallery";
 import Host from "../Components/Host";
 import Tags from "../Components/Tags";
 import RatingStar from "../Components/RatingStar";
@@ -15,17 +15,16 @@ import Error from "./Error";
 
 import data from "../data.json";
 
-
-/*Recuperer l'id du logement de lurl*/
-
 function AccomodationSheet() {
     
     //cette variable contient l'id du logement qui se trouve dans l'url
     const { id } = useParams() 
+
     //variable qui contient le logement dans le fichier json dont son id correspond a l'id de l url
     const myRoom = data.logements.filter((logement) => logement.id === id)[0]
-    //condition pour afficher la page d'erreur si l'id de l'url ne correspond a un des id des logement du json
-    //et sinon afficher la fiche logement
+    console.log(myRoom)
+    //condition: afficher la page d'erreur si l'id de l'url ne correspond a un des id des logements du mock
+    //sinon afficher la fiche logement
     if (myRoom === undefined){
         return(
         <div>
@@ -35,7 +34,7 @@ function AccomodationSheet() {
     return ( 
         <div>
         <Header />
-        <SlideShow views={myRoom.pictures}/>
+        <Gallery views={myRoom.pictures}/>
         <div className="partOne">
         <div className="enTete">
             <h1 className="nameAccomodation" key={myRoom.id}>{myRoom.title}</h1>
@@ -64,7 +63,7 @@ function AccomodationSheet() {
 export default AccomodationSheet;
 
 /*
-<SlideShow views={myRoom.pictures}/>
+<Gallery views={myRoom.pictures}/>
         <div className="partOne">
         <div className="enTete">
             <h1 className="nameAccomodation" key={myRoom.id}>{myRoom.title}</h1>
