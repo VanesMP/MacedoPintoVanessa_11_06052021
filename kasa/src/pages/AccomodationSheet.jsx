@@ -33,7 +33,7 @@ function AccomodationSheet() {
     return ( 
         <div>
         <Header />
-        <Gallery views={myRoom.pictures}/>
+        <Gallery pictures={myRoom.pictures}/>
         <div className="partOne">
         <div className="enTete">
             <h1 className="nameAccomodation" key={myRoom.id}>{myRoom.title}</h1>
