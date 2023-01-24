@@ -1,0 +1,32 @@
+.conatinerAboutSection {
+    width: 65%;
+    margin: auto;
+    min-height: 350px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/************* RESPONSIVE *****************/
+
+@media all and (max-width: 400px) {
+    .bannerAbout {
+        height: 245px;
+    }
+    .conatinerAboutSection {
+        width: 88%;
+        padding: 0;
+        justify-content: flex-start;
+    }
+    .banner .img {
+        width: 336px;
+        height: 224px;
+    }
+    .backgroundAbout {
+        width: 350px;
+        height: 224px;
+    }
+}

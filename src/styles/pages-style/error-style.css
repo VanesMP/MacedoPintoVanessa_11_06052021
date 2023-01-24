@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.containerError {
+    width: 65%;
+    height: 628px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titreError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    width: auto;
+    font: 288px 'Montserrat';
+    font-weight: 700;
+    color: #ff6060;
+}
+
+.oops {
+    width: auto;
+    font: 32px 'Montserrat';
+    font-weight: 500;
+    color: #ff6060;
+    line-height: 25px;
+}
+
+.return {
+    width: fit-content;
+    font: 18px 'Montserrat';
+    font-weight: 500;
+    color: #ff6060;
+    text-decoration: underline #ff6060;
+}
+
+
+/************** RESPONSIVE ******************/
+
+@media all and (min-width: 980px) and (max-width: 1210px) {
+    .containerError {
+        height: 560px;
+        justify-content: space-around;
+    }
+    .error {
+        font-size: 228px;
+    }
+    .oops {
+        font-size: 26px;
+    }
+}
+
+@media all and (min-width: 792px) and (max-width: 979px) {
+    .containerError {
+        justify-content: space-around;
+    }
+    .error {
+        font-size: 185px;
+    }
+    .oops {
+        font-size: 21px;
+    }
+}
+
+@media all and (min-width: 401px) and (max-width: 791px) {
+    .containerError {
+        justify-content: space-evenly;
+    }
+    .error {
+        font-size: 145px;
+    }
+    .oops {
+        font-size: 16px;
+    }
+}
+
+
+/************** MOBILE ******************/
+
+@media all and (max-width: 400px) {
+    .containerError {
+        margin-top: 150px;
+        height: 389px;
+    }
+    .error {
+        font-size: 96px;
+    }
+    .oops {
+        width: 87%;
+        font-size: 18px;
+    }
+    .return {
+        font-size: 14px;
+    }
+}

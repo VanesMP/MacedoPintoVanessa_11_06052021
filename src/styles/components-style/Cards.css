@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.elementCard {
+    width: 340px;
+    height: 340px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.cover {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.titre {
+    font: 20px 'Montserrat';
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: -45px;
+    margin-left: 15px;
+    width: 92%;
+    height: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.listCards {
+    width: 95%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+
+/*********** RESPOSIVE *****************/
+
+@media all and (min-width: 945px) and (max-width: 1400px) {
+    .listCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 944px) {
+    .listCards {
+        display: block;
+        height: auto;
+        padding-bottom: 1px;
+    }
+    .elementCard {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cover {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .listCards {
+        width: auto;
+        padding-top: 0;
+    }
+    .elementCard {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 22px;
+    }
+    .cover {
+        height: 280px;
+    }
+    .titre {
+        width: 81%;
+        text-overflow: clip;
+        white-space: pre-wrap;
+        margin-top: -56px;
+    }
+}

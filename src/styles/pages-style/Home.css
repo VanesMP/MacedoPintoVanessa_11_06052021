@@ -1,0 +1,8 @@
+/******** RESPONSIVE **********/
+
+@media all and (max-width: 400px) {
+    .bannerHome {
+        width: 90%;
+        height: 120px;
+    }
+}

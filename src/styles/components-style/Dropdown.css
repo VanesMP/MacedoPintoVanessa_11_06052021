@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.containerValue {
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.dropdown {
+    background-color: #ff6060;
+    width: 100%;
+    height: 47px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.valueTitle {
+    color: white;
+    font: 24px 'Montserrat';
+    font-weight: 500;
+    width: 90%;
+}
+
+.arrowIcon {
+    width: auto;
+    cursor: pointer;
+    transform: rotate(180deg)
+}
+
+.activeArrowIcon {
+    transform: rotate(180deg);
+}
+
+.descriptionValue {
+    width: 95%;
+    height: auto;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: none;
+    padding: 30px 0px 20px 5%;
+}
+
+.valueText {
+    color: #ff6060;
+    font: 24px'Montserrat';
+    font-weight: 400;
+    width: 95%;
+    line-height: 28px;
+}
+
+.notHidden {
+    display: block;
+}
+
+
+/*********** RESPONSIVE ************/
+
+@media all and (max-width: 400px) {
+    .containerValue {
+        margin-bottom: 20px;
+    }
+    .dropdown {
+        height: 30px;
+    }
+    .valueTitle {
+        width: 82%;
+        font-size: 15px;
+    }
+    .arrowIcon {
+        width: 17px;
+    }
+    .descriptionValue {
+        padding: 15px 0px 40px 5%;
+        margin-bottom: 0;
+    }
+    .valueText {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}

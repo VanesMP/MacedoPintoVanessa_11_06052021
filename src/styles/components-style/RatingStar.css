@@ -1,0 +1,40 @@
+.containerStars {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    margin-left: 7px;
+}
+
+
+/********** RESPONSIVE  ****************/
+
+@media all and (min-width: 401px) and (max-width: 850px) {
+    .containerStars {
+        width: 114px;
+        position: relative;
+        top: -48px;
+        justify-content: flex-start;
+    }
+}
+
+
+/********** MOBILE **********/
+
+@media all and (max-width: 400px) {
+    .containerStars {
+        width: 114px;
+        position: relative;
+        top: -48px;
+    }
+    .star {
+        width: 17px;
+        height: 17px;
+    }
+}

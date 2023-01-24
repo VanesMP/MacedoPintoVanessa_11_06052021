@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.partOne {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto;
+    align-items: flex-end;
+}
+
+.enTete {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.nameAccomodation {
+    font: 33px 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 51px;
+    color: #ff6060;
+}
+
+.locationAccomodation {
+    font: 18px 'Montserrat';
+    font-weight: 500;
+    font-style: normal;
+    line-height: 25px;
+    color: #ff6060;
+}
+
+.partTwo {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.partThree {
+    width: 85%;
+    margin: 25px auto 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description {
+    width: 47%;
+}
+
+.equipements {
+    width: 47%;
+}
+
+.equipement {
+    display: flex;
+    flex-direction: column;
+}
+
+.equipement p {
+    color: black;
+}
+
+
+/*********** RESPONSIVE ***********/
+
+@media all and (min-width: 851px) and (max-width: 1170px) {
+    .partOne {
+        align-items: center;
+    }
+    .enTete {
+        height: auto;
+    }
+    .nameAccomodation {
+        font-size: 28px;
+    }
+}
+
+@media all and (min-width: 401px) and (max-width: 850px) {
+    .partOne,
+    .partTwo {
+        display: block;
+    }
+    .partThree {
+        margin: 0px auto 50px;
+        flex-direction: column;
+    }
+    .enTete {
+        height: auto;
+    }
+    .nameAccomodation {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .locationAccomodation {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .description,
+    .equipements {
+        width: 100%;
+    }
+    .description {
+        margin-bottom: 25px;
+    }
+}
+
+
+/********** MOBILE *************/
+
+@media all and (max-width: 400px) {
+    .partOne,
+    .partTwo {
+        width: 335px;
+    }
+    .partOne,
+    .partTwo {
+        display: block;
+    }
+    .partThree {
+        margin: 0px auto 50px;
+        flex-direction: column;
+    }
+    .enTete {
+        height: auto;
+    }
+    .nameAccomodation {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .locationAccomodation {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .description,
+    .equipements {
+        width: 100%;
+    }
+}
